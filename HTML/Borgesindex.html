@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrinho de Compras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/Style.css" />
+</head>
+<body>
+  <header>
+    <h1>Carrinho de Compras Simples</h1>
+    <a href="/home.html"><img class="carrinho" src="/zImagens/logout_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+  </header>
+   
+  <section class="produtos">
+    <h2>Produtos</h2>
+    <div id="lista-produtos"></div>
+  </section>
+  
+  <div class="carrinhoFinal">
+    <section class="carrinhoLista">
+      <h2>Carrinho</h2>
+      <ul id="itens-carrinho"></ul>
+      <p>Total de Itens: <span id="total-itens">0</span></p>
+      <p>Total: <span id="valor-total">R$ 0,00</span></p>
+      <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+  </div>
+
+  <section class="compras-realizadas">
+    <h2>Compras Realizadas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Quantidade</th>
+          <th>Subtotal</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-compras"></tbody>
+    </table>
+  </section>
+
+  <script src="/JS/produtos.js"></script>
+</body>
+</html>
